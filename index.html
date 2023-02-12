@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library Search</title>
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Movie Library</h1>
+        <div id="title-container">
+            <label>Movie Title: </label>
+            <input type="text" id="title" placeholder="Enter the movie Title">
+            <label>Movie Genre: </label>
+            <input type="text" id="genre" placeholder="Enter the movie Genre" style="width: 200px;height: 20px;"> <br />
+        </div>
+        <div id="btn-container">
+            <button class="btns"  id="search">Search</button>
+            <button class="btns" onclick="sortByTitle()">Sort by Title</button>
+            <button class="btns" onclick="sortByGenre()">Sort by Genre</button>
+        </div>
+        <div id="results-container">
+            <h2>The count of Movies: </h2>
+            <ul id="results"></ul>
+            <ul id="count"></ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
